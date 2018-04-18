@@ -1,12 +1,8 @@
 language: java
-sudo: true
-script:
-  - mvn -q test
+jdk:
+ - oraclejdk8
 notifications:
     on_success: change
     on_failure: always
-env:
-- MY_VAR=EverythignIsAwesome
-- NODE_ENV=TEST
 services:
   - mysql
